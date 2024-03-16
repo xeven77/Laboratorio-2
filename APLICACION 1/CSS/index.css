@@ -1,0 +1,44 @@
+.bg{
+    background-color: #9798ce;
+}
+
+.btn{
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    font-size: 20px;
+}
+.table{
+    width: 450px;
+    height: 25px ;
+    text-align: center;
+    border-color: #000;
+    
+}
+.estado{
+    width: 150px;
+    height: 25px ;
+    text-align: center;
+    border-color: #000;
+    
+}
+
+.tareas{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-color: #000;
+    
+}
+.page {
+    display: grid;
+    width: 100%;
+    height: 15.4vh;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    border-color: #000;
+    background-color: #eee7e7;
+   
+}
+
+
