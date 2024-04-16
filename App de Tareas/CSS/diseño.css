@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0; /*Separar elementos de cada uno*/
+    padding: 0;
+}
+
+
+:root { /* La pseudoclase CSS :root coincide con el elemento raíz de un árbol que representa el documento*/
+    --green:#77cf77;
+    --red:#cf5151;
+    --blue-dark: #1f1fb6;
+    --yellow: #dddd37;
+}
+
+body {
+    background: linear-gradient(to bottom,var(--green),var(--red)); /*Crea un fondo combinando dos colores en si.*/
+    height: 100vh;
+}
+
+/*HEADER DE LA APP*/
+.perfil h2{  /*Diseño h1 Bienvenido: */
+    color: #ffffff;
+    margin-bottom: 10px;
+    /*color: #1f1fb6*/
+      
+}
+
+.perfil span{ /*Diseño span Que vamos a hacer */
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-family: "Zilla Slab", serif;
+    font-weight: 300;
+    font-style: italic;
+    
+}
+
+#fecha { /*diseño de la fecha al inico de la aplicacion*/
+    color: #ffffff;
+    padding: 50px 0 5px 0;
+}
+
+
+/*CONTENEDOR*/
+
+.contenedor{
+    max-width: 80%;
+    width: 400px;
+    margin: 0 auto;
+}
+/*NUEVA TAREA*/
+
+.nuevaTarea{ /*Diseño de la section de agregar tarea*/
+    background-color: #ffffff;
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    border-style:inset;
+    border-color: #000000;  
+    align-items: center;
+    padding: 10px;
+    gap: 50px;
+    margin: 15px 0;
+    
+}
+.nuevaTarea input{ /*Diseño del input de agregar tarea*/
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff;
+    padding: 15px;
+    
+}
+.nuevaTarea i{ /*Diseño del icono nueva tarea*/
+    font-size: 20px;
+}
+
+.nuevaTarea i:hover{ /* Cuando el mouse pase por encima del icono + esté hace las siguientes instrucciones*/
+    transform: scale(1.15); /* Se agranda 1.15 del tamaño real*/
+    cursor: pointer; /* Cuando el mouse pasa por encima del icono del + esté aparece la mano como seleccionar */
+    color: #cf5151;
+}
+
+.nuevaTarea input::placeholder{ /*Diseño del texto de */
+    font-size: 15px;
+    color: #000000;
+    text-align:center;
+    opacity: 20%;
+}
+/*SECCION  TAREA*/
+
+.seccion_tarea h4{
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 20px; /*Separacion con la pare de abajo*/
+}
+
+.seccion_tarea li{
+    display: flex;
+    background: linear-gradient(to bottom, var(--blue-dark),var(--yellow));
+    border-radius: 15px;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+    margin: 15px 0;
+
+}
+
+.seccion_tarea > ul p{
+    font-size: 1.2rem;
+}
+
+.seccion_tarea i{
+    font-size: 18px;
+}
+
+.seccion_tarea i:hover{
+    color: #ffffff;
+    transform: scale(1.15); /* Se agranda 1.15 del tamaño real*/
+    cursor: pointer;
+}
+
+.line-through{
+    text-decoration: line-through;
+    color:#ffffff ;
+
+}
+.input2{
+    background: linear-gradient(to bottom, var(--blue-dark),var(--yellow));
+}
