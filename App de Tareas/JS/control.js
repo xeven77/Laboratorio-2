@@ -5,7 +5,6 @@ const btn_add = document.getElementById('add'); // Extrae el elemento del icono 
 const realizado = "fa-circle-check"; //Extension para el circulo con el check
 const noRealizado = "fa-circle"; //Extension para el circulo sin el chulito
 const lineaText = 'line-through';// clase para poner una linea centrada en todo el texto
-const inputElement = `<input type="text" id="nuevaTarea"></input>`
 let id;
 let arrayList; //Se crea un array
 //let modificar = document.createElement("input");
