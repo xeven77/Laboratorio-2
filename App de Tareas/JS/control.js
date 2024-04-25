@@ -166,10 +166,10 @@ document.addEventListener('keyup',(event)=>{ //keyup es cuando el usuario deja d
             eliminar:false,
             modificar:false
         })
+            input.value=''; //Borrado del input
+            id++;
         }
         localStorage.setItem('APP',JSON.stringify(arrayList));
-        input.value=''; //Borrado del input
-        id++;
     }
 }) 
 
