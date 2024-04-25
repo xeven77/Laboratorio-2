@@ -175,6 +175,11 @@ document.addEventListener('keyup',(event)=>{ //keyup es cuando el usuario deja d
 
 lista.addEventListener('click',(event)=>{
     const component = event.target; //La propiedad target de la interfaz es una referencia al objeto en el cual se lanzo el evento.
+    /**Cuando le demos click a uno de los botones el component nos va a regresar el elemento del boton
+     * Por ejemplo si hacemos click en el de eliminar el me devuelve 
+     * <i class="fa-solid fa-trash-can" data="eliminar" id="${id}"></i>
+     */
+    //console.log(component);
     const componentData = component.attributes.data.value; 
     /*
      * target me da el bloque de codigo de todo el icono de check al darle click en el circulo
