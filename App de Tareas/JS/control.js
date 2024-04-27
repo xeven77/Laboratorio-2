@@ -124,8 +124,7 @@ function tareaEliminada(component){
     
     arrayList[component.id].eliminar = true
     
-    //arrayList[component.id].splice();
-    //console.log(arrayList)
+     //console.log(arrayList)
     //Por defecto está en false hasta que se le de q se desea eliminar 
 }
 
@@ -143,8 +142,12 @@ btn_add.addEventListener('click',()=>{
         })
         input.value=''; //Borrado de string para que la palabra agregada del input desaparezca.
         id++;
+        localStorage.setItem('APP',JSON.stringify(arrayList));
     }
-    localStorage.setItem('APP',JSON.stringify(arrayList));
+    /**
+        * JSON.stringify-->Devuelve una cadena JSON correspondiente al valor especificado, 
+        * incluyendo opcionalmente solo determinadas propiedades o reemplazando los valores de propiedad de una manera definida por el usuario.
+        */
 })
 
 /**
@@ -167,8 +170,12 @@ document.addEventListener('keyup',(event)=>{ //keyup es cuando el usuario deja d
         })
             input.value=''; //Borrado del input
             id++;
+            localStorage.setItem('APP',JSON.stringify(arrayList));
         }
-        localStorage.setItem('APP',JSON.stringify(arrayList));
+        /**
+        * JSON.stringify-->Devuelve una cadena JSON correspondiente al valor especificado, 
+        * incluyendo opcionalmente solo determinadas propiedades o reemplazando los valores de propiedad de una manera definida por el usuario.
+        */
     }
 }) 
 
