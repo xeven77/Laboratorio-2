@@ -141,10 +141,10 @@ btn_add.addEventListener('click',()=>{
             eliminar:false,
             modificar:false
         })
+        input.value=''; //Borrado de string para que la palabra agregada del input desaparezca.
+        id++;
     }
     localStorage.setItem('APP',JSON.stringify(arrayList));
-    input.value=''; //Borrado de string para que la palabra agregada del input desaparezca.
-    id++;
 })
 
 /**
